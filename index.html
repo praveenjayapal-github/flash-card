@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Flashcard Categories</title>
+  <meta charset="UTF-8">
+  <title>Flashcard Categories</title>
 <link rel="stylesheet" href="style.css" />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 40px;
-            background-color: #f0f8ff;
-        }
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      background-color: #f0f8ff;
+    }
 
-        h1 {
-            font-size: 2em;
-            margin-bottom: 30px;
-        }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
 
-        #category-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
+    #category-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
 
-        .category-btn {
-            padding: 20px 30px;
-            font-size: 18px;
-            border: none;
-            border-radius: 10px;
-            background-color: #4CAF50;
-            color: white;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+    .category-btn {
+      padding: 20px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-        .category-btn:hover {
-            background-color: #45a049;
-        }
-    </style>
+    .category-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
-
 <body>
-    <h1>Select a Flashcard Category</h1>
-    <div id="category-container"></div>
+  <h1>Select a Flashcard Category</h1>
+  <div id="category-container"></div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $.getJSON("categories.json", function (categories) {
-                categories.forEach(function (category) {
-                    const button = `viewer.html?category=${category}${category}</button>`;
-                    $("#category-container").append(button);
-                });
+  <script>
+    $(document).ready(function () {
+      $.getJSON("categories.json", function (categories) {
+        categories.forEach(function (category) {
+          const button = $('<button>')
+            .addClass('category-btn')
+            .text(category)
+            .click(function () {
+              window.location.href = `viewer.html?category=${category}`;
             });
-        });
-    </script>
-</body>
 
+          $('#category-container').append(button);
+        });
+      });
+    });
+  </script>
+</body>
 </html>
