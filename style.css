@@ -1,0 +1,20 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.category-btn {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+.category-btn:hover {
+  background-color: #45a049;
+}

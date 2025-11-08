@@ -1,0 +1,28 @@
+Hi, I want to create a complete web application using html, jquery, javascript and css. It's an application for kids to learn phonics. I want to show the flash card one by one for each click. 
+
+The first page should have the list of letters, by clicking one letter it should start show the flash card of word based on which letter i clicked.
+For example: A, B, C, D, till Z will be listed on the first page, by clicking 'C' it should start showing the flash card of the word stars with 'C'.
+The flash card should be generated based on the configured word list. 
+The flash card should be attractive in color and the word should be in bold and white. 
+It should be compatible to all screen such as mobile, laptop, TV ect.
+Can you able to understand my requirement
+
+----------------------------------------------
+
+Hi, I want to create a complete web application using html, jquery, javascript and css. It's an application for kids to learn math. 
+
+I want to show a random three number maximum 100, in which one number should be missing. The kid should fill the missing number from the option. The options with correct answer should be shown next to the question. The kid should drag and drop the correct answer. 
+For example: 4,5,_ is the question. The options should be 10, 11,6,3. The kid should drag the correct answer 6 and drop it in the right place
+Each right answer should carry 1 point and the points should be displayed on the top of the screen. 
+The answer should be validated and show as green or red for result. 
+The next button should show the next question. 
+It should be compatible to all screen such as mobile, laptop, TV ect.
+Can you able to understand my requirement
+
+similarly i want to create the question with missing letter from 1 - ONE to 10 - TEN. 
+For example: the question will be 3 - THREE, it should randomly missing one of the letter like TH_EE. The kid should drag and drop the correct option from the options below. The correct answer should carry 1 point. 
+
+----------------------------------------------
+
+Hi, I want to create a complete web application using html, jquery, javascript and css. It's an application for kids to learning based on the flash card. I will be having a set of images and i want to show one by one after each click. 
+

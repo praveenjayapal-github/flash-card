@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flashcard Viewer</title>
+    style.css
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+            background-color: #fff8dc;
+        }
+
+        #flashcard-container {
+            margin: 20px auto;
+            max-width: 600px;
+            position: relative;
+        }
+
+        #flashcard {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            cursor: pointer;
+            transition: opacity 0.5s ease;
+        }
+
+        #controls {
+            margin-top: 20px;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: #2196F3;
+            color: white;
+            cursor: pointer;
+        }
+
+        .nav-btn:hover {
+            background-color: #0b7dda;
+        }
+
+        #progress {
+            margin-top: 20px;
+            height: 20px;
+            background-color: #eee;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #progress-bar {
+            height: 100%;
+            width: 0%;
+            background-color: #4CAF50;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="category-title">Loading...</h2>
+    <div id="flashcard-container">
+        <img id="flashcard" src="" alt="Flashcard">
+    </div>
+
+    <div id="controls">
+        <button class="nav-btn" id="prev-btn">Previous</button>
+        <button class="nav-btn" id="next-btn">Next</button>
+    </div>
+
+    <div id="progress">
+        <div id="progress-bar"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script</body>
+</html>
