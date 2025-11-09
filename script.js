@@ -45,6 +45,10 @@ $(document).ready(function () {
       showFlashcard();
     }
   });
+
+  $('#home-btn').click(function () {
+    window.location.href = `index.html`;
+  });
 });
 
 function showFlashcard() {
