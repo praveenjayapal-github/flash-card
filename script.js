@@ -58,6 +58,8 @@ function showFlashcard() {
   const suffix = showingAnswer ? "_a" : "_q";
   const imagePath = `images/${category}/${baseName}${suffix}.jpg`;
 
+  if (category == "flag") imagePath = `images/${category}/${baseName}.jpg`;
+
   // Fade transition
   $("#flashcard").fadeOut(200, function () {
     $(this).attr("src", imagePath).attr("alt", baseName).fadeIn(200);
