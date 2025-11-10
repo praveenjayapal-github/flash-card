@@ -56,7 +56,7 @@ $(document).ready(function () {
 function showFlashcard() {
   if (!flashcards.length) return;
 
-  currentIndex = (Math.floor(Math.random() * challenges)) + 1;
+  currentIndex = (Math.floor(Math.random(challenges))) + 1;
   const baseName = flashcards[currentIndex];
   const suffix = showingAnswer ? "_a" : "_q";
   imagePath = `images/${category}/${baseName}${suffix}.jpg`;
