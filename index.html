@@ -45,19 +45,17 @@
 <body>
     <h1>Select a Flashcard Category</h1>
     <div id="category-container"></div>
-    <div>No of challenges <input type="hidden" id="noOfChallenges" /></div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
             $.getJSON("categories.json", function (categories) {
                 categories.forEach(function (category) {
-                    noOfChallenges = $("#noOfChallenges").val();
                     const button = $('<button>')
                         .addClass('category-btn')
                         .text(category)
                         .click(function () {
-                            window.location.href = `viewer.html?category=${category}&noOfChallenges=${noOfChallenges}`;
+                            window.location.href = `viewer.html?category=${category}`;
                         });
 
                     $('#category-container').append(button);
