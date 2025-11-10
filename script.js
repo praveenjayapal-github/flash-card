@@ -2,6 +2,7 @@ let flashcards = [];
 let currentIndex = 0;
 let showingAnswer = false;
 let category = "";
+let challenges = "";
 
 $(document).ready(function () {
   // Get category from URL
@@ -53,7 +54,8 @@ $(document).ready(function () {
 
 function showFlashcard() {
   if (!flashcards.length) return;
-
+  challenges = ${noOfChallenges}
+  currentIndex = (Math.floor(Math.random() * challenges)) + 1;
   const baseName = flashcards[currentIndex];
   const suffix = showingAnswer ? "_a" : "_q";
   imagePath = `images/${category}/${baseName}${suffix}.jpg`;
