@@ -2,7 +2,7 @@ let flashcards = [];
 let currentIndex = 0;
 let showingAnswer = false;
 let category = "";
-let challenges = "";
+let challenges = 0;
 
 $(document).ready(function () {
   // Get category from URL
