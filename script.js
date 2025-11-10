@@ -56,9 +56,9 @@ function showFlashcard() {
 
   const baseName = flashcards[currentIndex];
   const suffix = showingAnswer ? "_a" : "_q";
-  const imagePath = `images/${category}/${baseName}${suffix}.jpg`;
+  imagePath = `images/${category}/${baseName}${suffix}.jpg`;
 
-  if (category == "flag") imagePath = `images/${category}/${baseName}.jpg`;
+  if (category == "flags") imagePath = `images/${category}/${baseName}.jpg`;
 
   // Fade transition
   $("#flashcard").fadeOut(200, function () {
