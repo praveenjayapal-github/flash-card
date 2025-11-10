@@ -52,11 +52,12 @@
         $(document).ready(function () {
             $.getJSON("categories.json", function (categories) {
                 categories.forEach(function (category) {
+                    noOfChallenges = $("#noOfChallenges").val();
                     const button = $('<button>')
                         .addClass('category-btn')
                         .text(category)
                         .click(function () {
-                            window.location.href = `viewer.html?category=${category}`;
+                            window.location.href = `viewer.html?category=${category}&noOfChallenges=${noOfChallenges}`;
                         });
 
                     $('#category-container').append(button);

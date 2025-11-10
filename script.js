@@ -8,6 +8,7 @@ $(document).ready(function () {
   // Get category from URL
   const urlParams = new URLSearchParams(window.location.search);
   category = urlParams.get("category");
+  challenges = urlParams.get("noOfChallenges");
 
   if (!category) {
     alert("No category selected.");
@@ -54,7 +55,7 @@ $(document).ready(function () {
 
 function showFlashcard() {
   if (!flashcards.length) return;
-  challenges = ${noOfChallenges}
+
   currentIndex = (Math.floor(Math.random() * challenges)) + 1;
   const baseName = flashcards[currentIndex];
   const suffix = showingAnswer ? "_a" : "_q";
