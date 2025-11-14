@@ -59,7 +59,7 @@ function showFlashcard() {
   const suffix = showingAnswer ? "_a" : "_q";
   imagePath = `images/${category}/${baseName}${suffix}.jpg`;
 
-  if (category == "flags") imagePath = `images/${category}/${baseName}.jpg`;
+  // if (category == "flags") imagePath = `images/${category}/${baseName}.jpg`;
 
   // Fade transition
   $("#flashcard").fadeOut(200, function () {
