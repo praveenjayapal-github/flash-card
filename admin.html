@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Flashcard Admin Panel</title>
-  style.css
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -53,16 +53,13 @@
 </head>
 <body>
   <h1>Flashcard Admin Panel</h1>
-
+  <label for="category-select">Choose a category:</label>
   <select id="category-select">
     <option value="">Select Category</option>
   </select>
-
-  <div id="drop-zone">Drag and drop images here</div>
-
+  <div id="drop-zone" role="button" aria-label="Drag and drop files here">Drag and drop images here</div>
   <div id="preview"></div>
-
-  https://code.jquery.com/jquery-3.6.0.min.js</script>
-  admin.js</script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="admin.js"></script>
 </body>
 </html>
